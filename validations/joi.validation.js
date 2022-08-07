@@ -1,4 +1,4 @@
-const Joi = require('Joi');
+const Joi = require('joi');
 const addPizza = Joi.object({
     size: Joi.string().required().valid('small', 'medium', 'large'),
     price: Joi.number().integer().required(),
